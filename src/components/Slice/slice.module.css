@@ -1,0 +1,18 @@
+.triangle{
+    margin: 80px;
+    width: 0;
+    height: 0px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid yellow;
+    animation-name: move1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   
+  }
+  
+  @keyframes move1 {
+      0%   {border-right: 30px solid yellow;}
+      50%  {border-right: 30px solid blue; margin-left:25px; transform: rotate(180deg)}
+      100% {border-right: 30px solid yellow; transform: rotate(360deg)}
+  }
